@@ -12,6 +12,10 @@ for line in f:
     if Counter(guesses)['1'] >= 2:
         sure_count += 1
 
+f.close()
+
 f = open("ateam.out", "w")
 
 f.write("%d\n" % sure_count)
+
+f.close()
